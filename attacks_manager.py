@@ -16,16 +16,15 @@ args = parser.parse_args()
 config = configparser.ConfigParser()
 config.read('config.ini')
 base_url = config['server']['url']
-dvwa_creds={
-    'user': config['credentials']['username'],
-    'pass': config['credentials']['password']
-}
+dvwa_user = config['credentials']['username']
+dvwa_pass = config['credentials']['password']
+## Credentials for password attacks (from config file & cli)
 dict_user = config['dictionaries']['users'].split('\n')
 dict_pass = config['dictionaries']['passwords'].split('\n')
 users = []
 passw = []
 
-
+# Populate global variables and fetch attack number
 def get_args():
     if args.attacks[0] is 1:
         if args.users is not None:
@@ -43,7 +42,7 @@ def execute_attack(attack_no, session):
 def main():
     print("Trying to login...")
     sess = Session(base_url)
-    sess.login('login.php', dvwa_creds)
+    sess.login('login.php', dvwa_user, dvwa_pass)
 
     execute_attack(get_args(), sess)
 

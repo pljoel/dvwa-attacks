@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d5f36bc-65c5-421c-b328-e8892a0a0ae3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/attacks_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/attacks_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/session.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/password_attacks/dictionary/dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/password_attacks/dictionary/dictionary.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +19,8 @@
       <file leaf-file-name="attacks_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attacks_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="50" selection-start-line="50" selection-end-line="50" selection-end-column="26" />
+            <state relative-caret-position="660">
+              <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -38,8 +40,8 @@
       <file leaf-file-name="dictionary.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/password_attacks/dictionary/dictionary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="315">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -47,10 +49,10 @@
       <file leaf-file-name="session.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="55" column="36" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+            <state relative-caret-position="1035">
+              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,8 +80,8 @@
       <list>
         <option value="$PROJECT_DIR$/core/login.py" />
         <option value="$PROJECT_DIR$/config" />
-        <option value="$PROJECT_DIR$/attacks_manager.py" />
         <option value="$PROJECT_DIR$/config.ini" />
+        <option value="$PROJECT_DIR$/attacks_manager.py" />
         <option value="$PROJECT_DIR$/password_attacks/dictionary/dictionary.py" />
         <option value="$PROJECT_DIR$/core/session.py" />
       </list>
@@ -272,13 +274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/password_attacks/dictionary/dictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.6/site-packages/requests_html-0.9.0.dist-info/DESCRIPTION.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2075" />
@@ -289,20 +284,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/attacks_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="50" selection-start-line="50" selection-end-line="50" selection-end-column="26" />
+        <state relative-caret-position="660">
+          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/password_attacks/dictionary/dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="55" column="36" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+        <state relative-caret-position="1035">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
