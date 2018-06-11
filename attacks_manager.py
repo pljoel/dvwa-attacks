@@ -35,14 +35,16 @@ def get_args():
 
 def execute_attack(attack_no, session):
     if attack_no is 1:
+        print("[1] Executing dictionary attack")
         dictionary.attack(session, dict_user, users, dict_pass, passw)
     exit(0)
 
 
 def main():
-    print("Trying to login...")
+    print("Trying to login as {}...".format(dvwa_user))
     sess = Session(base_url)
     sess.login('login.php', dvwa_user, dvwa_pass)
+    print("Logged in as {}!".format(dvwa_user))
 
     execute_attack(get_args(), sess)
 
