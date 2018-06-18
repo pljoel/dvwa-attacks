@@ -25,6 +25,6 @@ Credits to the following for providing lists of sensitive files in windows and L
 
 3. http://pwnwiki.io/#!presence/windows/blind.md
 
-4. https://digi.ninja/blog/when\_all\_you\_can\_do\_is\_read.php
+4. https://digi.ninja/blog/when_all_you_can_do_is_read.php
 
 5. https://www.facebook.com/notes/security-training-share/useful-list-file-for-local-file-inclusion/762408313789674/
