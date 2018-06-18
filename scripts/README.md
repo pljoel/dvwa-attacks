@@ -4,11 +4,11 @@ Example Usages (See tool help for more options)
 
 `~$ ./attacks.py -u http://192.168.10.5 -l /vulnerabilities/fi/?page= -o windows -t 5 -a /login.php -p 4`
 
-The above command initiates an lfi test against the url `http://192.168.10.5/vulnerabilities/fi/?page=` for a DVWA webserver running on windows, requiring authentication at http://192.168.10.5/login.php. 5 threads will be issued per attack task and the max depth of path to traverse below the webroot is 4
+The above command initiates an lfi test against the url `http://192.168.10.5/vulnerabilities/fi/?page=` for a DVWA webserver running on windows, requiring authentication at `http://192.168.10.5/login.php`. 5 threads will be issued per attack task and the max depth of path to traverse below the webroot is 4
 
 `~$ ./attacks.py -u http://192.168.10.5 -x /vulnerabilities/xss_d/?default= -t 5 -a /login.php --param default`
 
-The above command initiates an xss test against the url `http://192.168.10.5/vulnerabilities/xss_d/?default=` for a DVWA instance requiring authentication at http://192.168.10.5/login.php. 5 threads will be issued per task and the parameter or body key to test is `default`
+The above command initiates an xss test against the url `http://192.168.10.5/vulnerabilities/xss_d/?default=` for a DVWA instance requiring authentication at `http://192.168.10.5/login.php`. 5 threads will be issued per task and the parameter or body key to test is `default`
 
 `~$ ./attacker.sh http://192.168.10.5`
 
