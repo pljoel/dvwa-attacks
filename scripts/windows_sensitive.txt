@@ -1,0 +1,59 @@
+system32\eula.txt
+boot.ini
+WINDOWS\win.ini
+WINNT\win.ini
+Repair\SAM
+WINDOWS\php.ini
+WINNT\php.ini
+conf\httpd.conf
+php\php.ini
+php5\php.ini
+php4\php.ini
+php6\php.ini
+php7\php.ini
+bin\php.ini
+apache\php.ini
+logs\access.log
+logs\error.log
+WINDOWS\TEMP\
+php\sessions\
+php5\sessions\
+php4\sessions\
+etc/hosts
+debug/NetSetup.log
+config/AppEvent.Evt
+config/SecEvent.Evt
+Panther/unattend.txt
+Panther/unattend.xml
+Panther/unattended.xml
+Panther/sysprep.inf
+windows\repair\SAM
+%SYSTEMROOT%\repair\SAM
+%SYSTEMROOT%\System32\config\RegBack\SAM
+%SYSTEMROOT%\System32\config\SAM
+%SYSTEMROOT%\repair\system
+%SYSTEMROOT%\System32\config\SYSTEM
+%SYSTEMROOT%\System32\config\RegBack\system
+c:\WINDOWS\TEMP\  
+c:\php\sessions\  
+c:\php5\sessions\  
+c:\php4\sessions\
+c:\Program Files\Apache Group\Apache\logs\access.log  
+c:\Program Files\Apache Group\Apache\logs\error.log
+c:\WINDOWS\system32\eula.txt
+c:\boot.ini  
+c:\WINDOWS\win.ini  
+c:\WINNT\win.ini  
+c:\WINDOWS\Repair\SAM  
+c:\WINDOWS\php.ini  
+c:\WINNT\php.ini  
+c:\Program Files\Apache Group\Apache\conf\httpd.conf  
+c:\Program Files\Apache Group\Apache2\conf\httpd.conf  
+c:\Program Files\xampp\apache\conf\httpd.conf  
+c:\php\php.ini  
+c:\php5\php.ini  
+c:\php4\php.ini  
+c:\apache\php\php.ini  
+c:\xampp\apache\bin\php.ini  
+c:\home2\bin\stable\apache\php.ini  
+c:\home\bin\stable\apache\php.ini
