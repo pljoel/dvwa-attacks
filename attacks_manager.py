@@ -44,10 +44,11 @@ def get_args():
 
 
 def log_time_attack(str):
-    f = open("attacks_log.txt", "a+")
+    f = open("attacks_log_ml.txt", "a+")
     f.write(
-        "\tExecuting {} at {} \n".format(str, datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        "Attack:{}, Start:{}, ".format(str, datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
     f.close()
+    
 
 
 def execute_attack(attack_no, session, log=True):
@@ -103,6 +104,10 @@ def execute_attack(attack_no, session, log=True):
         if log: log_time_attack("Stored XSS")
         print("[12] Executing XSS (Stored)")
         xss_s.attack(session)
+
+    f = open("attacks_log_ml.txt", "a+")
+    f.write("End: {}\n".format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+    f.close()    
     exit(0)
 
 
@@ -111,9 +116,10 @@ def main():
     sess = Session(base_url)
     sess.login('login.php', dvwa_user, dvwa_pass)
     print("Logged in as {}!".format(dvwa_user))
-
+    
+    
     execute_attack(get_args(), sess)
-
+   
 
 if __name__ == "__main__":
     main()
